@@ -47,3 +47,15 @@ function Contact(firstName, lastName, phoneNumber) {
 Contact.prototype.fullName = function() {
   return this.firstName + " " + this.lastName;
 }
+
+// User interface logic
+$(document).ready(function() {
+  $("form").submit(function(event) {
+      event.preventDefault();
+      const firstName = $("#firstName").val();
+      const lastName = $("#lastName").val();
+      const phoneNumber = $("#phoneNumber").val();
+
+      
+  }); 
+});
